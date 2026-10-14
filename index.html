@@ -1,639 +1,1276 @@
-<!DOCTYPE html><html lang="ko"><head>
-<meta charSet="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,viewport-fit=cover"/>
-<meta property="og:title" content="‘내가가입한자동차보험조회’ 방법"/>
-<meta property="og:site_name" content="‘내가가입한자동차보험조회’ 방법" />
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="/"/>
-<meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
-<meta name="description" content="" />
-<meta property="og:description" content=""/>
-<meta itemprop="description" content="" />
-<meta name="twitter:description" content=""/>
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="‘내가가입한자동차보험조회’ 방법"/>
-<meta name="twitter:url" content="/"/>
-<meta name="twitter:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
-<meta name="google-site-verification" content="wfZydaMj4Kbr_OrpLwv0BIRA1K9HwwFN5Plul6ZCz5k" />
-<meta name="naver-site-verification" content="c4df048e01c045a5c60320f1aab2465347d073be" />
 
 
-<link rel="canonical" href="/">
-
-<meta name="robots" content="index, follow">
-<meta name="NaverBot" content="index, follow" />
-<meta name="Yeti" content="index, follow" />
-<meta name="googlebot" content="index, follow" />
-
-<meta name="subject" content="‘내가가입한자동차보험조회’ 방법" />
-<meta name="publisher" content="‘내가가입한자동차보험조회’ 방법" />
-<meta name="Other Agent" content="‘내가가입한자동차보험조회’ 방법" />
-<meta name="location" content="South Korea" />
-<meta name="distribution" content="global" />
-<meta name="rating" content="general" />
-<meta itemprop="name" content="" />
-
-	<link rel="stylesheet" href="./Img/reset.css">
-	<link rel="stylesheet" href="./Img/main.css">
-	<link rel="stylesheet" href="./common/swiper.css" />
-	<script src="./jquery.min.js"></script>
-	<script src="./jquery.serializeObject.min.js"></script>
-	<script src="./json3.min.js"></script>
-	<script src="./bxslider.js" type="text/javascript"></script>
-	<script src="./common/moment.min.js"></script>
-
-
-
-    <!-- 리소스 힌트 (성능 최적화) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="/">
-
-    <!-- Apple iOS 최적화 -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="‘내가가입한자동차보험조회’ 방법">
-
-    <!-- Android Chrome 최적화 -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="‘내가가입한자동차보험조회’ 방법">
-
-    <!-- 모바일 뷰포트 최적화 -->
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-
-    <!-- 모바일 브라우저 최적화 -->
-    <meta name="format-detection" content="telephone=no, address=no, email=no">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="MobileOptimized" content="width">
-
-
-
-
-<title>‘내가가입한자동차보험조회’ 방법</title>
-
-<meta name="next-head-count" content="25"/>
-<meta name="format-detection" content="telephone=no"/>
-
-
-
-	
-
-	
- <style>
-    /* Reset and Typography */
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.8; /* Increased line-height for readability */
-      color: #333;
-      background: #f0f4f7; /* Soft background color */
-      font-size: 16px;
-    }
-    header, nav, section, footer {
-      padding: 25px;
-      max-width: 1200px;
-      margin: auto;
-      background: #fff;
-      margin-bottom: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    /* Header Styling */
-    header {
-      padding: 40px 25px;
-      background: linear-gradient(135deg, #007bff, #0056b3); /* Blue gradient */
-      color: #fff;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 800;
-      margin-bottom: 10px;
-      line-height: 1.3;
-    }
-    header p {
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-
-    /* Navigation Styling */
-    nav {
-      background: #fff;
-      border-radius: 12px;
-      border: 1px solid #e0e0e0;
-      text-align: center;
-      padding: 15px 0;
-      box-shadow: none;
-    }
-    nav a {
-      color: #333;
-      margin: 0 18px;
-      font-weight: 600;
-      text-decoration: none;
-      font-size: 1.1rem;
-      padding: 8px 10px;
-      border-radius: 6px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    nav a:hover {
-      background-color: #f0f4f7;
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    /* Section Headings and General Styling */
-    h2 {
-      border-bottom: 4px solid #007bff; /* Primary color line */
-      padding-bottom: 10px;
-      margin-bottom: 25px;
-      color: #2c3e50; /* Darker heading color */
-      font-size: 2rem;
-      font-weight: 700;
-    }
-    h3 {
-      font-size: 1.5rem;
-      color: #007bff;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      border-left: 5px solid #007bff;
-      padding-left: 10px;
-    }
-    p, ul, ol, dl {
-      margin-bottom: 15px;
-    }
-    strong {
-      color: #007bff;
-      font-weight: 700;
-    }
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Call to Action Button */
-    .cta {
-      display: inline-block;
-      background-color: #007bff;
-      color: white;
-      padding: 18px 40px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 1.2rem;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-      margin-top: 20px;
-      text-align: center;
-    }
-    .cta:hover {
-      background-color: #0056b3;
-    }
-
-    /* Data Visualization Elements */
-    .data-card {
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 10px;
-      border: 1px solid #eee;
-      margin-bottom: 20px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-      background: #fff;
-    }
-    table th, table td {
-      border: 1px solid #ddd;
-      padding: 12px;
-      text-align: center;
-    }
-    table th {
-      background-color: #eaf4ff; /* Light blue header for tables */
-      font-weight: 700;
-      color: #333;
-    }
-    table tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-
-    /* Form Styling */
-    form {
-      background: #f9f9f9;
-      padding: 30px;
-      border-radius: 10px;
-      border: 1px solid #e0e0e0;
-    }
-    form label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 600;
-      color: #555;
-    }
-    form input[type="text"], form input[type="tel"], form select, form input[type="date"] {
-      width: calc(100% - 22px);
-      padding: 12px;
-      margin-top: 4px;
-      margin-bottom: 15px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      font-size: 1rem;
-    }
-    form button {
-      margin-top: 15px;
-      width: 100%;
-      padding: 15px;
-      font-size: 1.1rem;
-      cursor: pointer;
-    }
-
-    /* FAQ Styling (DL) */
-    dl.faq {
-      margin-top: 20px;
-    }
-    dl.faq dt {
-      font-weight: 700;
-      margin-top: 15px;
-      cursor: pointer;
-      color: #007bff;
-      background: #f0f4f7;
-      padding: 15px;
-      border-radius: 8px;
-      border-left: 5px solid #007bff;
-      transition: background-color 0.3s;
-    }
-    dl.faq dt:hover {
-      background-color: #eaf4ff;
-    }
-    dl.faq dd {
-      margin-left: 15px;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: #fff;
-      border-left: 2px solid #ddd;
-      border-bottom: 1px solid #eee;
-    }
-
-    /* Review Card Styling */
-    .review-card {
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 10px;
-      border: 1px solid #eee;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    .review-card p {
-      color: #555;
-      font-style: italic;
-      line-height: 1.7;
-    }
-    .review-card strong {
-      display: block;
-      margin-top: 10px;
-      color: #333;
-      font-weight: 600;
-    }
-    .review-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    .review-meta {
-      font-size: 0.9em;
-      color: #777;
-    }
-    .highlight-box {
-        background: #eaf4ff;
-        border: 1px dashed #007bff;
-        padding: 20px;
-        border-radius: 8px;
-        margin-top: 20px;
-    }
-  </style>
-
-  <!-- JSON-LD Schema for WebPage, Article, and Review -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "mainEntity": {
-      "@type": "Article",
-      "headline": "내가 가입한 자동차 보험 조회: 2026년 최신 보험료 비교 및 가입 가이드",
-      "description": "2026년 기준, 내가 가입한 자동차 보험을 조회하고 보험료를 비교하는 방법을 상세히 안내합니다. 다이렉트 보험의 장단점, 할인 특약 종류, 보험사별 견적 차이 분석을 통해 최적의 보험료를 찾는 노하우를 제공합니다.",
-      "author": {
-        "@type": "Organization",
-        "name": "오토보험 비교센터"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "오토보험 비교센터",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.yourdomain.kr/images/logo.png"
-        }
-      },
-      "datePublished": "2026-01-01",
-      "dateModified": "2026-01-10",
-      "image": "https://www.yourdomain.kr/images/main-insurance.jpg",
-      "keywords": "내가 가입한 자동차 보험 조회, 자동차 보험료 비교, 자동차 보험 갱신, 자동차 보험 가입, 자동차 보험 평균 가격, 자동차 보험 추천 순위, 다이렉트 자동차 보험 장점"
-    },
-    "review": [
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
         {
-            "@type": "Review",
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "4.8"
-            },
-            "author": {
-                "@type": "Person",
-                "name": "김**"
-            },
-            "reviewBody": "복잡한 보험 비교를 한 번에 해결해줘서 좋았습니다. 덕분에 보험료를 10만원 이상 절약했어요.",
-            "datePublished": "2026-01-05"
+          "@type": "WebPage",
+          "@id": "https://direct.reliabledone.com/car-insurance-lookup#webpage",
+          "url": "https://direct.reliabledone.com/car-insurance-lookup",
+          "name": "내가 가입한 자동차보험 조회 및 30개사 통합 비교 시스템",
+          "description": "운전자가 계약한 자동차보험의 보장내역, 가입 보험사, 만기일, 할인할증 등급을 공식 전산망을 통해 정확하게 조회하는 원스톱 포털.",
+          "inLanguage": "ko-KR",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "홈",
+                "item": "https://direct.reliabledone.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "자동차보험 종합안내",
+                "item": "https://direct.reliabledone.com/car-insurance"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "내가 가입한 자동차보험 조회",
+                "item": "https://direct.reliabledone.com/car-insurance-lookup"
+              }
+            ]
+          }
         },
         {
-            "@type": "Review",
-            "reviewRating": {
-                "@type": "Rating",
-                "ratingValue": "4.5"
+          "@type": "FAQPage",
+          "@id": "https://direct.reliabledone.com/car-insurance-lookup#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "내가 가입한 자동차보험 조회를 본인 인증만으로 즉시 확인하는 공식 방법은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "한국신용정보원의 내보험다보여(크레딧포유) 시스템 및 손해보험협회 내보험찾아줌 공시 전산망을 활용하면 공인인증서, 간편인증(카카오톡, 네이버, 토스 등)을 통해 본인 명의로 체결된 모든 손해보험사의 자동차보험 증권번호, 계약기간, 담보금액, 가입 상태를 1분 이내에 무료로 열람할 수 있습니다."
+              }
             },
-            "author": {
-                "@type": "Person",
-                "name": "이**"
+            {
+              "@type": "Question",
+              "name": "자동차보험 만기일이 다가왔을 때 조회를 통해 미리 확인해야 하는 핵심 항목은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "보험 만기 일자, 현재 적용 중인 무사고 할인할증 등급(예: 11Z~29P), 대인배상2 무한 가입 여부, 대물배상 가입금액(통상 5억원~10억원 권장), 자기신체사고 또는 자동차상해 특약 선택 여부, 자기차량손해(자차) 및 무보험차상해 가입 여부, 주행거리 마일리지 특약 환급 정산 대상 여부를 반드시 확인해야 합니다."
+              }
             },
-            "reviewBody": "내가 가입한 자동차 보험 조회 방법이 생각보다 간단했어요. 갱신 시점에 유용하게 사용했습니다.",
-            "datePublished": "2026-01-08"
+            {
+              "@type": "Question",
+              "name": "2027년도 자동차보험 제도 개편 및 요율 산출 시 새롭게 반영되는 특징은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2027년 기준 자동차보험은 AI 텔레매틱스 기반 안전운전 점수 연동 할인율 확대, 친환경 전기차 및 하이브리드 고전압 배터리 특별약관 보장 정밀화, 국토교통부 연계 실시간 주행거리 자동 산정 시스템 도입 등으로 인해 무사고 운전자의 할인 혜택이 강화되고 과실비율 사고 이력자의 갱신 할증률이 정교하게 차등 적용됩니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "포털 및 커뮤니티(보배드림, 디시인사이드 등)에서 언급되는 성지 다이렉트 최저가 비교 시 주의점은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "온라인 커뮤니티에서 언급되는 가입 이벤트, 주유 상품권 증정, 네이버페이 캐시백 등의 혜택만 맹신하기보다, 동일 담보 기준 각 손해보험사(삼성화재, 현대해상, DB손해보험, KB손해보험, 캐롯 등)별 자체 요율표와 사고 처리 인프라, 긴급출동 네트워크 역량을 종합 비교하여 갱신 계약을 진행하는 것이 필수적입니다."
+              }
+            }
+          ]
         }
-    ]
-  }
-  </script>
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --primary-light: #3b82f6;
+            --primary-dark: #172554;
+            --secondary-color: #0f766e;
+            --accent-color: #d97706;
+            --bg-base: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-subtle: #f1f5f9;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --text-light: #64748b;
+            --border-color: #e2e8f0;
+            --border-hover: #cbd5e1;
+            --success-color: #059669;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+            --radius-md: 10px;
+            --radius-lg: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", Dotum, sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            line-height: 1.85;
+            font-size: 16px;
+            letter-spacing: -0.02em;
+            word-break: keep-all;
+        }
+
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 18px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-area a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hero-banner {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #1e3a8a 100%);
+            color: #ffffff;
+            padding: 64px 24px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background-color: rgba(59, 130, 246, 0.25);
+            color: #93c5fd;
+            border: 1px solid rgba(147, 197, 253, 0.3);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            letter-spacing: 0.02em;
+        }
+
+        .hero-title {
+            font-size: 34px;
+            font-weight: 800;
+            line-height: 1.35;
+            margin-bottom: 18px;
+            color: #ffffff;
+        }
+
+        .hero-subtitle {
+            font-size: 17px;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 32px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .lookup-tool-card {
+            background: #ffffff;
+            color: var(--text-main);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-color);
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .tool-header {
+            border-bottom: 2px solid var(--bg-subtle);
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+
+        .tool-header h2 {
+            font-size: 21px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 6px;
+        }
+
+        .tool-header p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+            margin-bottom: 24px;
+        }
+
+        .form-control-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-control-wrap label {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        .form-input, .form-select {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            font-size: 14.5px;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .form-input:focus, .form-select:focus {
+            border-color: var(--primary-light);
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+
+        .btn-action-primary {
+            background-color: var(--primary-light);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 14px 28px;
+            border-radius: var(--radius-md);
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-action-primary:hover {
+            background-color: var(--primary-color);
+        }
+
+        .main-container {
+            max-width: 1120px;
+            margin: 48px auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .article-body {
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            padding: 44px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+
+        .content-section {
+            margin-bottom: 56px;
+        }
+
+        .content-section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2.section-heading {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-dark);
+            border-left: 5px solid var(--primary-light);
+            padding-left: 14px;
+            margin-bottom: 22px;
+            line-height: 1.4;
+        }
+
+        h3.sub-heading {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-top: 32px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h4.inner-heading {
+            font-size: 16.5px;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-top: 22px;
+            margin-bottom: 10px;
+        }
+
+        p.paragraph {
+            margin-bottom: 18px;
+            color: var(--text-muted);
+            line-height: 1.85;
+            text-align: justify;
+        }
+
+        .highlight-text {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .notice-card {
+            background-color: #eff6ff;
+            border: 1px solid #bfdbfe;
+            border-radius: var(--radius-md);
+            padding: 20px;
+            margin: 22px 0;
+        }
+
+        .notice-card strong {
+            color: #1e40af;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .notice-card p {
+            color: #1e3a8a;
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .data-table-wrapper {
+            overflow-x: auto;
+            margin: 28px 0;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        table.custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        table.custom-table thead {
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        table.custom-table th, table.custom-table td {
+            padding: 13px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        table.custom-table tbody tr:hover {
+            background-color: #f8fafc;
+        }
+
+        table.custom-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .badge-active {
+            background-color: #dcfce7;
+            color: #15803d;
+        }
+
+        .badge-optional {
+            background-color: #fef3c7;
+            color: #b45309;
+        }
+
+        .tag-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 20px 0;
+        }
+
+        .tag-cloud span {
+            background-color: var(--bg-subtle);
+            color: var(--text-muted);
+            border: 1px solid var(--border-color);
+            padding: 5px 12px;
+            border-radius: 9999px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .visual-indicator-box {
+            background-color: #faf5ff;
+            border: 1px solid #e9d5ff;
+            border-radius: var(--radius-md);
+            padding: 22px;
+            margin: 24px 0;
+        }
+
+        .visual-indicator-box h4 {
+            color: #6b21a8;
+            margin-bottom: 14px;
+            font-size: 15.5px;
+        }
+
+        .metric-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 12px;
+        }
+
+        .metric-label {
+            width: 170px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-muted);
+        }
+
+        .metric-track {
+            flex: 1;
+            background-color: #e2e8f0;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .metric-fill {
+            background-color: var(--primary-light);
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .metric-val {
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--text-main);
+            width: 55px;
+            text-align: right;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            margin-bottom: 14px;
+            background-color: #ffffff;
+            transition: border-color 0.2s ease;
+        }
+
+        .faq-item.active {
+            border-color: var(--primary-light);
+        }
+
+        .faq-question {
+            padding: 18px 22px;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--text-main);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .faq-answer {
+            padding: 0 22px 20px 22px;
+            color: var(--text-muted);
+            font-size: 14.5px;
+            line-height: 1.8;
+            display: none;
+            border-top: 1px solid #f1f5f9;
+            padding-top: 16px;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .ext-reference-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .ext-reference-item {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            background-color: var(--bg-base);
+            transition: all 0.2s ease;
+        }
+
+        .ext-reference-item:hover {
+            border-color: var(--primary-light);
+            background-color: #ffffff;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .ext-reference-item a {
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 15px;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .ext-reference-item span {
+            font-size: 13px;
+            color: var(--text-light);
+            display: block;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 48px 24px 36px 24px;
+            font-size: 13.5px;
+            border-top: 1px solid #1e293b;
+        }
+
+        .footer-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 36px;
+        }
+
+        .footer-legal p {
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .article-body {
+                padding: 24px 18px;
+            }
+            .hero-title {
+                font-size: 26px;
+            }
+            .footer-inner {
+                grid-template-columns: 1fr;
+            }
+            .metric-label {
+                width: 110px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<header id="상단">
-  <h1>내가 가입한 자동차 보험 조회: 2026년 최신 보험료 비교 및 가입 가이드</h1>
-  <p>자동차 보험 갱신이 다가온다면? <strong>내가 가입한 자동차 보험</strong> 정보를 빠르게 확인하고, 가장 저렴하고 합리적인 <strong>보험료 비교 견적</strong>을 받아보세요.</p>
-  <a href="#무료견적신청" class="cta">2026년 보험료 무료 비교견적 시작하기</a>
-</header>
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="/">
+                    <span>내내가입한자동차보험조회 통합안내센터</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#section-inquiry-guide">실시간 조회방법</a></li>
+                    <li><a href="#section-company-list">30개 보험사 목록</a></li>
+                    <li><a href="#section-premium-calc">요율 및 견적산출</a></li>
+                    <li><a href="#section-faq">자주 묻는 질문</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<nav>
-  <a href="#조회방법">보험 조회 방법</a>
-  <a href="#보험료분석">보험료 분석 및 할인 팁</a>
-  <a href="#가입순위">보험사 순위 및 추천</a>
-  <a href="#무료견적신청">무료 견적 신청</a>
-  <a href="#자주묻는질문">FAQ</a>
-</nav>
+    <div class="hero-banner">
+        <div class="hero-container">
+            <span class="hero-badge">2027 공인 손해보험 통합 전산망 연계 공시</span>
+            <h1 class="hero-title">내가 가입한 자동차보험 조회, 증권번호와 만기일 및 실시간 다이렉트 견적 확인</h1>
+            <p class="hero-subtitle">가입한 보험사가 어디인지 기억나지 않거나 계약 상세 담보 및 만기 일자를 확인해야 할 때, 전국 30개 손해보험사 전산 데이터를 통해 1분 만에 정확하게 조회하고 가장 저렴한 갱신 견적을 산출해 드립니다.</p>
 
-<section id="조회방법" aria-label="내가 가입한 자동차 보험 조회 방법">
-  <h2>내가 가입한 자동차 보험 조회, 왜 해야 할까?</h2>
-  <p>자동차 보험은 매년 갱신해야 하는 의무보험입니다. 하지만 많은 운전자들이 매년 비슷한 <strong>보험료를 지불</strong>하면서도, 정작 자신의 <strong>자동차 보험 보장 내용</strong>이나 <strong>보험료 산정 기준</strong>을 정확히 알지 못하는 경우가 많습니다. 2026년 현재, 다양한 보험사들이 치열하게 경쟁하며 더 많은 할인 특약을 선보이고 있습니다. 따라서 <strong>내가 가입한 자동차 보험 조회</strong>를 통해 갱신 시점의 보장 내용을 점검하고, 여러 보험사의 견적을 비교하는 것은 <strong>자동차 보험료를 절약</strong>하는 가장 확실한 방법입니다.</p>
+            <div class="lookup-tool-card">
+                <div class="tool-header">
+                    <h2>간편 내가가입한자동차보험조회 및 만기 갱신 시뮬레이터</h2>
+                    <p>본인 확인을 위한 기본 입력 후 체결된 계약 정보 및 할인할증 등급 기준 예상 비용을 산출할 수 있습니다.</p>
+                </div>
+                <form id="insuranceForm" onsubmit="event.preventDefault(); simulateLookup();">
+                    <div class="form-grid">
+                        <div class="form-control-wrap">
+                            <label for="owner-name">차량 소유자 성명 (피보험자)</label>
+                            <input type="text" id="owner-name" class="form-input" placeholder="성명을 입력하세요" required>
+                        </div>
+                        <div class="form-control-wrap">
+                            <label for="car-number">차량번호 또는 차대번호</label>
+                            <input type="text" id="car-number" class="form-input" placeholder="예: 12가 3456" required>
+                        </div>
+                        <div class="form-control-wrap">
+                            <label for="driver-range">운전자 한정 특약 범위</label>
+                            <select id="driver-range" class="form-select">
+                                <option value="1인">피보험자 1인 한정 (가장 저렴)</option>
+                                <option value="부부">부부 한정 특약</option>
+                                <option value="가족">가족 한정 (형제/자매 제외)</option>
+                                <option value="누구나">누구나 운전 가능 (요율 최고)</option>
+                            </select>
+                        </div>
+                        <div class="form-control-wrap">
+                            <label for="target-agency">조회 희망 주요 보험사 선택</label>
+                            <select id="target-agency" class="form-select">
+                                <option value="all">전국 30개 손해보험사 통합 전산</option>
+                                <option value="삼성화재">삼성화재 다이렉트 애니카</option>
+                                <option value="현대해상">현대해상 하이카 다이렉트</option>
+                                <option value="DB손해보험">DB손해보험 프로미 다이렉트</option>
+                                <option value="KB손해보험">KB손해보험 매직카 다이렉트</option>
+                                <option value="캐롯손해보험">캐롯손해보험 퍼마일</option>
+                                <option value="메리츠화재">메리츠화재 다이렉트</option>
+                                <option value="한화손해보험">한화손해보험 다이렉트</option>
+                                <option value="AXA손해보험">AXA손해보험 다이렉트</option>
+                                <option value="하나손해보험">하나손해보험 원데이/에코</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-action-primary">내 자동차보험 계약정보 및 갱신 예상금액 실시간 산출하기</button>
+                </form>
 
-  <h3>핵심 키워드 분석: 내가 가입한 자동차 보험 조회</h3>
-  <p>운전자들이 가장 많이 검색하는 키워드인 '내가 가입한 자동차 보험 조회'는 주로 <strong>보험 갱신 시점</strong>이나 <strong>타 보험사로의 이동</strong>을 고려할 때 발생합니다. 특히 <strong>다이렉트 보험의 장점</strong>이 부각되면서, 과거처럼 설계사를 통해 가입하는 대신 스스로 여러 보험사를 비교하여 <strong>가장 저렴한 곳</strong>을 찾으려는 경향이 강해지고 있습니다. 이 과정에서 <strong>보험료 평균 금액</strong>, <strong>보험사 순위</strong>, <strong>가입 후기</strong> 등의 정보가 중요하게 작용합니다.</p>
-
-  <h3>자동차 보험 조회 3가지 방법 상세 비교</h3>
-  <p>현재 가입된 보험사를 확인하고 보험료를 비교할 수 있는 방법은 크게 세 가지가 있습니다. 각 방법마다 <strong>장점과 단점</strong>이 명확하므로, 본인에게 맞는 방식을 선택하는 것이 중요합니다.</p>
-
-  <div class="data-card">
-    <h4>방법 1: 보험 개발원 [내 보험 다모아] 활용</h4>
-    <p><strong>장점:</strong> 가장 공신력 있는 방법입니다. 여러 보험사의 상품 정보를 한눈에 비교할 수 있으며, 실제 <strong>내가 가입한 보험</strong> 정보를 정확하게 확인할 수 있습니다. 정부나 공공기관에서 제공하는 사이트(예: 보험개발원, 금융감독원)를 이용하면 <strong>보험 가입 내역</strong>을 안전하게 조회할 수 있습니다.</p>
-    <p><strong>단점:</strong> 보험사별 세부적인 할인 특약 적용 여부나 실시간 견적은 별도로 확인해야 합니다.</p>
-
-    <h4>방법 2: 다이렉트 보험사 공식 홈페이지 이용</h4>
-    <p><strong>장점:</strong> 정확한 실시간 견적이 가능하며, 보험사별로 제공하는 <strong>다양한 할인 특약</strong>을 직접 적용해 볼 수 있습니다. 갱신 시점이라면 기존 고객에게 제공되는 특별 할인도 놓치지 않고 확인할 수 있습니다.</p>
-    <p><strong>단점:</strong> 여러 보험사의 견적을 확인하려면 각 홈페이지를 일일이 방문해야 하는 번거로움이 있습니다.</p>
-
-    <h4>방법 3: 전문 보험 비교견적 플랫폼 이용</h4>
-    <p><strong>장점:</strong> 여러 보험사의 견적을 한 번에 비교할 수 있어 시간을 절약할 수 있습니다. <strong>보험료 평균 가격</strong>을 바로 확인하며, 전문 상담사와 1:1 상담을 통해 <strong>가입 순위</strong>와 <strong>추천 상품</strong> 정보를 얻을 수 있습니다. 특히 <strong>자동차 보험료 갱신</strong> 시점에 가장 효율적인 방법입니다.</p>
-    <p><strong>단점:</strong> 제휴된 보험사 범위 내에서만 비교가 가능하다는 제한이 있습니다.</p>
-  </div>
-</section>
-
-<section id="보험료분석" aria-label="자동차 보험료 분석 및 할인 팁">
-  <h2>2026년 자동차 보험료 분석: 평균 가격과 절약 팁</h2>
-  <p>2026년도 자동차 보험료는 운전자 개인의 특성과 차량 모델에 따라 천차만별입니다. <strong>자동차 보험료 평균</strong>은 매년 조금씩 변동하지만, 일반적으로 운전 경력이 짧거나 사고 이력이 많을수록 <strong>보험료가 인상</strong>됩니다. 반대로 <strong>마일리지 할인 특약</strong>, <strong>블랙박스 할인</strong> 등 적극적인 할인 특약 활용 시 <strong>보험료를 크게 절약</strong>할 수 있습니다. 아래에서 <strong>자동차 보험료</strong>를 결정하는 핵심 요인과 절약 노하우를 상세히 알아봅시다.</p>
-
-  <h3>핵심 할인 특약 TOP 5: 이것만 알아도 10만원 절약!</h3>
-  <p>자동차 보험 가입 시 가장 중요한 것은 <strong>저렴한 곳</strong>을 찾는 것도 중요하지만, 다양한 <strong>할인 특약</strong>을 얼마나 잘 활용하느냐입니다. 2026년 기준으로 가장 많은 <strong>할인 금액</strong>을 제공하는 특약들을 정리했습니다.</p>
-  <ul>
-    <li><strong>마일리지 할인 (주행거리 할인):</strong> 가장 효과적인 <strong>자동차 보험료 절약</strong> 방법입니다. 연간 주행 거리에 따라 5%에서 최대 40%까지 <strong>보험료를 할인</strong>받을 수 있습니다. 특히 주행 거리가 짧은 운전자들에게 <strong>가장 저렴한 보험</strong>을 찾는 핵심 방법입니다.</li>
-    <li><strong>블랙박스 할인:</strong> 차량에 블랙박스가 설치되어 있다면 2~5%의 추가 할인이 적용됩니다.</li>
-    <li><strong>자녀 할인 (특약):</strong> 만 6세 이하의 자녀가 있는 경우 7~10%의 할인이 적용됩니다. 출산 예정이거나 어린 자녀를 둔 운전자에게 유리한 <strong>보험 추천</strong> 요소입니다.</li>
-    <li><strong>첨단 안전장치 할인:</strong> 차선이탈 경보 장치(ADAS), 전방 충돌 방지 보조 장치 등이 장착된 차량은 추가 할인을 받을 수 있습니다.</li>
-    <li><strong>안전 운전 점수 할인:</strong> T맵, 카카오내비 등 내비게이션 앱의 안전 운전 점수를 활용하여 할인받는 특약입니다. 평소 안전 운전을 하는 분이라면 <strong>저렴한 자동차 보험</strong> 가입에 큰 도움이 됩니다.</li>
-  </ul>
-
-  <h3>자동차 보험료 산출의 5가지 핵심 요소</h3>
-  <p><strong>자동차 보험료 견적</strong>은 단순히 차량 가격이나 연식만으로 결정되지 않습니다. 아래 5가지 요소를 종합적으로 분석하여 <strong>보험료 평균 금액</strong>이 산출됩니다. <strong>보험료 차이점</strong>을 이해하는 것이 합리적인 <strong>보험료 절약</strong>의 첫걸음입니다.</p>
-  <dl class="data-analysis">
-    <dt>1. 운전자 경력 및 사고 이력 (할증 등급)</dt>
-    <dd>사고 이력은 <strong>자동차 보험료</strong>에 가장 큰 영향을 미칩니다. 사고가 없는 운전자는 <strong>보험료가 저렴한 곳</strong>을 찾는 것이 쉽지만, 사고 이력이 있다면 <strong>보험료가 인상</strong>될 수 있습니다. 갱신 시점에 <strong>내가 가입한 자동차 보험 조회</strong>를 통해 무사고 기간을 확인하고 <strong>할인 등급</strong>을 점검해야 합니다.</dd>
-    <dt>2. 차량 모델 및 안전 등급</dt>
-    <dd>차량 모델에 따른 손해율이 다르게 적용됩니다. 외제차나 스포츠카는 상대적으로 <strong>보험료가 비싼 곳</strong>이 많고, 안전 등급이 높은 차량은 <strong>할인 혜택</strong>을 받을 수 있습니다.</dd>
-    <dt>3. 운전자 범위 및 연령</dt>
-    <dd>운전자 범위가 좁을수록 (예: 본인 한정) <strong>보험료가 저렴</strong>합니다. 또한, 연령이 높을수록 사고 위험률이 감소하여 <strong>보험료가 평균적으로 낮아집니다</strong>. <strong>운전자 연령 한정 특약</strong>은 보험료를 절약하는 기본적인 방법입니다.</dd>
-    <dt>4. 담보 구성 (필수 vs. 선택)</dt>
-    <dd>대인/대물 배상은 의무 가입이지만, 자기차량손해(자차)나 자기신체사고(자손)는 선택 사항입니다. 자차를 빼면 <strong>보험료는 저렴</strong>해지지만, 사고 발생 시 <strong>단점</strong>이 매우 큽니다. 자신의 운전 습관에 맞는 합리적인 담보 구성을 <strong>추천</strong>합니다.</dd>
-    <dt>5. 보험사별 할인 특약 및 손해율</dt>
-    <dd><strong>다이렉트 보험의 장점</strong>은 설계사 수수료가 없어 <strong>보험료가 저렴</strong>하다는 점입니다. 각 보험사마다 <strong>블랙박스 할인</strong>, <strong>마일리지 할인율</strong>, <strong>무사고 할인</strong> 등 세부 특약에서 차이점이 발생하므로 반드시 <strong>비교견적</strong>이 필요합니다.</dd>
-  </dl>
-
-  <h3>2026년 자동차 보험료 예상 견적 시뮬레이션 표</h3>
-  <p>다음 표는 2026년 기준 <strong>자동차 보험료 평균</strong>을 대략적으로 보여주는 시뮬레이션입니다. (정확한 금액은 개인 상황에 따라 달라질 수 있습니다.)</p>
-  <table>
-    <caption>자동차 보험료 예상 견적 비교 (30대 남성, 5년 무사고 기준)</caption>
-    <thead>
-      <tr>
-        <th>차량 모델 (2020년식)</th>
-        <th>운전자 범위</th>
-        <th>마일리지 할인 (1만 km) 적용</th>
-        <th>블랙박스 할인 적용</th>
-        <th>예상 보험료 (A사)</th>
-        <th>예상 보험료 (B사)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>준중형 세단</td>
-        <td>본인 한정</td>
-        <td>적용</td>
-        <td>적용</td>
-        <td>65만원</td>
-        <td>60만원</td>
-      </tr>
-      <tr>
-        <td>SUV (패밀리용)</td>
-        <td>부부 한정</td>
-        <td>미적용</td>
-        <td>적용</td>
-        <td>80만원</td>
-        <td>75만원</td>
-      </tr>
-      <tr>
-        <td>경차</td>
-        <td>본인 한정</td>
-        <td>적용</td>
-        <td>적용</td>
-        <td>40만원</td>
-        <td>38만원</td>
-      </tr>
-      <tr>
-        <td>수입차 (고가)</td>
-        <td>본인 한정</td>
-        <td>적용</td>
-        <td>적용</td>
-        <td>120만원</td>
-        <td>110만원</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
-<section id="가입순위" aria-label="보험사 순위 및 추천">
-  <h2>자동차 보험사 순위 및 추천: 내게 맞는 보험사 찾기</h2>
-  <p><strong>자동차 보험 추천 순위</strong>는 단순히 <strong>가장 저렴한 곳</strong>을 의미하지 않습니다. <strong>가입 후기</strong>를 보면 알 수 있듯이, 사고 발생 시 처리 속도나 고객 응대 서비스도 중요합니다. <strong>다이렉트 보험</strong> 시장에서는 대형 보험사들이 높은 점유율을 차지하고 있으며, 각 보험사마다 <strong>장점과 단점</strong>이 있습니다.</p>
-
-  <h3>주요 보험사별 특징 비교 분석</h3>
-  <p><strong>내돈내산 후기</strong>를 바탕으로 각 보험사의 특징을 비교하여 <strong>가입 순위</strong>를 매겨보았습니다. 이 정보를 통해 <strong>보험료 비교</strong> 시 참고하여 합리적인 선택을 할 수 있습니다.</p>
-  <div class="review-list">
-    <div class="review-card">
-      <h3>삼성화재 다이렉트</h3>
-      <p>시장 점유율 1위, 안정적인 고객 서비스와 다양한 할인 특약이 <strong>장점</strong>입니다. 특히 주행거리 및 무사고 <strong>할인율</strong>이 높아 <strong>가장 저렴한 보험</strong>을 찾는 분들이 선호합니다. <strong class="review-meta">#가입순위1위 #넓은보장범위 #할인혜택</strong></p>
+                <div id="lookup-result-box" style="display:none; margin-top: 24px; padding: 20px; background-color: #f8fafc; border-radius: var(--radius-md); border: 1px solid #cbd5e1;">
+                    <h3 style="font-size: 17px; color: var(--primary-color); margin-bottom: 10px;">전산 모의 산출 분석 결과</h3>
+                    <p style="font-size: 14.5px; color: var(--text-muted); line-height: 1.7;" id="result-desc"></p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="review-card">
-      <h3>KB손해보험 다이렉트</h3>
-      <p>비교적 <strong>저렴한 보험료</strong>와 특유의 포인트 제도로 유명합니다. <strong>보장 범위</strong>가 넓고, <strong>내돈내산 후기</strong>에서 사고 처리 만족도가 높게 평가되는 편입니다. <strong class="review-meta">#합리적비용 #우수한서비스 #추천상품</strong></p>
-    </div>
-    <div class="review-card">
-      <h3>현대해상 다이렉트</h3>
-      <p>어린이 할인 특약 등 가족 단위 운전자에게 유리한 상품이 많습니다. <strong>보험료 차이점</strong>을 비교해보면 특정 연령대에서 <strong>가격 경쟁력</strong>이 높습니다. <strong class="review-meta">#어린이특약강점 #가족추천 #갱신팁</strong></p>
-    </div>
-  </div>
 
-  <h3>다이렉트 보험과 설계사 가입의 장단점 비교</h3>
-  <p><strong>다이렉트 보험</strong>의 <strong>장점</strong>은 <strong>보험료가 저렴한 곳</strong>이 많다는 것입니다. 반면, 설계사를 통한 가입은 복잡한 <strong>보험료 산정</strong> 과정이나 사고 발생 시 <strong>단점</strong>을 보완할 수 있는 전문가의 도움을 받을 수 있다는 <strong>장점</strong>이 있습니다.</p>
-  <table>
-    <caption>다이렉트 보험 vs. 설계사 가입 비교</caption>
-    <thead>
-      <tr>
-        <th>구분</th>
-        <th>다이렉트 보험</th>
-        <th>설계사 가입 (오프라인)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>가격 (보험료)</strong></td>
-        <td><strong>가장 저렴한 곳</strong>을 찾을 수 있음 (평균 15~20% 저렴)</td>
-        <td>상대적으로 비쌈 (설계사 수수료 포함)</td>
-      </tr>
-      <tr>
-        <td><strong>가입 절차</strong></td>
-        <td>직접 온라인으로 진행 (간편하지만 복잡할 수 있음)</td>
-        <td>설계사가 대행 (전문적인 도움)</td>
-      </tr>
-      <tr>
-        <td><strong>서비스 장단점</strong></td>
-        <td>긴급출동 서비스는 동일, 세부 상담의 <strong>단점</strong></td>
-        <td>사고 처리 시 전문가의 <strong>장점</strong>, 갱신 시점 케어</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+    <main class="main-container">
+        <article class="article-body">
 
-<section id="무료견적신청" aria-label="무료 견적 신청 및 맞춤 상담">
-  <h2>무료 견적 신청 및 맞춤 상담</h2>
-  <p>2026년 <strong>내가 가입한 자동차 보험 조회</strong> 후, 현재의 <strong>보험료</strong>가 합리적인지 궁금하다면 무료 비교견적을 신청해보세요. 여러 보험사의 <strong>보험료 평균 금액</strong>을 한 번에 비교하고, 개인 상황에 맞는 <strong>할인 특약</strong>을 적용한 <strong>예상 비용</strong>을 확인할 수 있습니다.</p>
+            <section class="content-section" id="section-inquiry-guide">
+                <h2 class="section-heading">내내가입한자동차보험조회 핵심 가이드 및 공인 통합 전산망 절차</h2>
+                <p class="paragraph">
+                    대한민국에서 차량을 보유하고 운행하는 모든 차주는 자동차손해배상 보장법에 따라 의무보험(책임보험)에 반드시 가입해야 합니다. 그러나 차량 출고 후 1년(12개월) 단위로 갱신 계약을 체결하면서 본인이 선택한 손해보험사가 어디인지, 정확한 만기 일자가 언제인지 망각하는 사례가 빈번하게 발생합니다. 특히 장기 무사고 운전자의 경우 매년 자동 갱신을 진행하거나 가족 명의 계약, 신용카드 결제 내역 미확인 등으로 인해 정작 불의의 교통사고가 발생했을 때 신속하게 가입 보험사 고객센터 전화번호로 긴급출동이나 사고 접수를 요청하지 못해 큰 불편을 겪게 됩니다.
+                </p>
+                <p class="paragraph">
+                    <strong>내내가입한자동차보험조회</strong>는 단순히 계약 여부를 확인하는 단계를 넘어, 보장 담보의 금액 설정(대인배상2, 대물배상 가입금액 5억원 내지 10억원 여부, 자기신체사고와 자동차상해의 차이점, 무보험차상해, 자기차량손해 담보 등)과 무사고 할인할증 등급(11Z부터 29P까지의 요율표 등급)을 면밀히 분석하는 중대한 절차입니다. 2027년 개편된 금융 전산 표준에 따라 운전자는 단 한 번의 본인 인증을 거치는 것만으로도 국내 전 손해보험사 전산 데이터를 통합 조회할 수 있습니다.
+                </p>
 
-  <form action="/submit-estimate" method="POST" aria-describedby="견적폼설명">
-    <p id="견적폼설명">아래 폼을 작성해주시면 실시간으로 <strong>자동차 보험료 비교 견적</strong>을 안내해 드립니다. 개인 정보는 안전하게 보호됩니다.</p>
+                <div class="notice-card">
+                    <strong>조회 시 반드시 챙겨야 할 3대 필수 데이터</strong>
+                    <p>
+                        첫째, 가입한 보험회사 공식 명칭 및 해당 증권번호입니다.<br>
+                        둘째, 책임보험 및 종합보험의 정확한 만기일자(당일 24:00 또는 시작일 24:00 기준 착오 방지)입니다.<br>
+                        셋째, 주행거리 마일리지 특약 환급 정산 신청을 위한 계기판 누적 주행거리 기록 및 차선이탈, 커넥티드카 등 부속 특약 등록 상태입니다.
+                    </p>
+                </div>
 
-    <label for="carModel">차량 모델</label>
-    <input type="text" id="carModel" name="carModel" placeholder="예: 현대 아반떼 2020년식" required />
+                <h3 class="sub-heading">공식 기관 통합 전산망을 활용한 3가지 신속 조회 방법</h3>
+                <p class="paragraph">
+                    인터넷 웹 브라우저나 스마트폰 어플을 통해 손쉽게 가입 내역을 파악할 수 있는 공인 경로는 다음과 같습니다.
+                </p>
+                <p class="paragraph">
+                    1. <strong>한국신용정보원 내보험다보여 (Credit4U):</strong> 공공 신용정보 전산망에 집적된 데이터를 바탕으로 생명보험 및 손해보험 협약사의 계약 상세 현황을 통합 열람할 수 있습니다. 피보험자의 주민등록번호 및 공동인증서, 금융인증서, 간편인증(카카오톡, 네이버, 토스, PASS 등)을 활용하여 즉시 조회가 가능합니다.
+                </p>
+                <p class="paragraph">
+                    2. <strong>손해보험협회 통합 전산망 서비스:</strong> 대한민국 손해보험 업계를 총괄하는 공인 협회 전산 시스템을 통해 본인 명의로 체결된 유효 계약 및 실효 계약, 과거 3개년 사고 이력 내역을 투명하게 확인할 수 있습니다.
+                </p>
+                <p class="paragraph">
+                    3. <strong>정부24 및 자동차 365 공공 포털:</strong> 국토교통부와 한국교통안전공단이 관리하는 공공 행정 포털로, 차량 등록번호만으로 책임보험 가입 유무 및 보험사 코드 확인이 가능하여 의무보험 미가입에 따른 과태료 발생 여부를 사전에 방지할 수 있습니다.
+                </p>
+            </section>
 
-    <label for="driverAge">운전자 연령</label>
-    <select id="driverAge" name="driverAge" required>
-      <option value="">운전자 연령대 선택</option>
-      <option value="20s">20대</option>
-      <option value="30s">30대</option>
-      <option value="40s">40대</option>
-      <option value="50s">50대</option>
-      <option value="60s">60대 이상</option>
-    </select>
+            <section class="content-section" id="section-company-list">
+                <h2 class="section-heading">국내 30개 주요 보험사별 전산 조회 시스템 및 고객센터 안내</h2>
+                <p class="paragraph">
+                    내내가입한자동차보험조회를 진행할 때 소비자들이 가장 많이 문의하는 국내 대표 손해보험 및 금융 지주 계열 보험사 30개사의 세부 채널 현황입니다. 각 사의 대표 고객센터 전화번호 및 온라인 다이렉트 전산망을 이용하면 증권 재발행, 가입증명서 발급, 팩스 전송 및 긴급 견인출동 요청을 즉각 처리할 수 있습니다.
+                </p>
 
-    <label for="driverScope">운전자 범위</label>
-    <select id="driverScope" name="driverScope" required>
-      <option value="">운전자 범위 선택</option>
-      <option value="self">본인 한정</option>
-      <option value="couple">부부 한정</option>
-      <option value="family">가족 한정</option>
-      <option value="all">누구나 운전</option>
-    </select>
+                <div class="data-table-wrapper">
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>보험사 브랜드 명칭</th>
+                                <th>대표 고객센터 전화번호</th>
+                                <th>모바일 앱 및 전산 조회 특징</th>
+                                <th>다이렉트 갱신 장점</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>삼성화재 (애니카)</strong></td>
+                                <td>1588-5114</td>
+                                <td>삼성화재 다이렉트 착 어플 즉시 증권 발급</td>
+                                <td>국내 점유율 최상위, 신속한 전국 보상망</td>
+                            </tr>
+                            <tr>
+                                <td><strong>현대해상 (하이카)</strong></td>
+                                <td>1588-5656</td>
+                                <td>현대해상 모바일 창구 앱 지문/FACE ID 로그인</td>
+                                <td>어린이 할인 특약 및 커넥티드카 할인 강세</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DB손해보험 (프로미)</strong></td>
+                                <td>1588-0100</td>
+                                <td>DB다이렉트 간편 조회 및 카카오 알림톡 서비스</td>
+                                <td>티맵 운전점수 할인 원조, 합리적인 평균 요금</td>
+                            </tr>
+                            <tr>
+                                <td><strong>KB손해보험 (매직카)</strong></td>
+                                <td>1544-0114</td>
+                                <td>KB손해보험 다이렉트 앱 계약 통합 관리</td>
+                                <td>대중교통 이용 할인 및 걸음수 할인 연동</td>
+                            </tr>
+                            <tr>
+                                <td><strong>메리츠화재</strong></td>
+                                <td>1566-7711</td>
+                                <td>메리츠 다이렉트 온라인 증권 출력 시스템</td>
+                                <td>심플한 담보 구성 및 가격 경쟁력</td>
+                            </tr>
+                            <tr>
+                                <td><strong>한화손해보험</strong></td>
+                                <td>1566-8000</td>
+                                <td>스마트인슈 간편 전자서명 조회</td>
+                                <td>차선이탈 및 전방충돌방지 장치 장착 할인</td>
+                            </tr>
+                            <tr>
+                                <td><strong>캐롯손해보험</strong></td>
+                                <td>1566-0300</td>
+                                <td>캐롯 플러그 IoT 기반 월납 후불제 전산</td>
+                                <td>탄 만큼만 내는 퍼마일 요금제, 단거리 유리</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AXA손해보험</strong></td>
+                                <td>1566-1566</td>
+                                <td>악사 다이렉트 원클릭 마이페이지 조회</td>
+                                <td>국내 최초 다이렉트 도입, 마일리지 선할인</td>
+                            </tr>
+                            <tr>
+                                <td><strong>하나손해보험</strong></td>
+                                <td>1566-3000</td>
+                                <td>하나 에코플러스 원데이/장기 전산망</td>
+                                <td>공무원/교직원 특화 요율 및 단기 가입 편의</td>
+                            </tr>
+                            <tr>
+                                <td><strong>롯데손해보험</strong></td>
+                                <td>1588-3344</td>
+                                <td>let:click 다이렉트 모바일 통합센터</td>
+                                <td>실속형 온라인 요금표 설계 가능</td>
+                            </tr>
+                            <tr>
+                                <td><strong>흥국화재</strong></td>
+                                <td>1688-1688</td>
+                                <td>이유다이렉트 원스톱 전산 조회망</td>
+                                <td>가성비 위주 다이렉트 특약 구성</td>
+                            </tr>
+                            <tr>
+                                <td><strong>MG손해보험</strong></td>
+                                <td>1588-5959</td>
+                                <td>JOY다이렉트 고객지원 센터</td>
+                                <td>기본형 담보 위주의 최저가 견적표</td>
+                            </tr>
+                            <tr>
+                                <td><strong>신한EZ손해보험</strong></td>
+                                <td>1544-2580</td>
+                                <td>디지털 간편 웹창구 및 신한 슈퍼SOL 연동</td>
+                                <td>신한금융 포인트 연계 결제 지원</td>
+                            </tr>
+                            <tr>
+                                <td><strong>카카오페이손해보험</strong></td>
+                                <td>1644-7405</td>
+                                <td>카카오톡 메신저 기반 1초 계약 열람</td>
+                                <td>무사고 환급 프로모션 및 모바일 인터페이스</td>
+                            </tr>
+                            <tr>
+                                <td><strong>NH농협손해보험</strong></td>
+                                <td>1644-9000</td>
+                                <td>농협 헤아림 앱 및 전국 농축협 창구 연계</td>
+                                <td>농촌 지역 및 시니어 운전자 전담 인프라</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AIG손해보험</strong></td>
+                                <td>1544-2792</td>
+                                <td>글로벌 온라인 전산 확인 포털</td>
+                                <td>외국계 손보사 특화 상해보험 연계</td>
+                            </tr>
+                            <tr>
+                                <td><strong>에이스손해보험 (Chubb)</strong></td>
+                                <td>1566-5800</td>
+                                <td>처브 다이렉트 전산 계약 확인</td>
+                                <td>운전자 및 탑승자 특화 보장 솔루션</td>
+                            </tr>
+                            <tr>
+                                <td><strong>교보악사</strong></td>
+                                <td>1566-1566</td>
+                                <td>교보 계열 제휴 다이렉트 창구</td>
+                                <td>교보라이프 연계 복합 금융 할인</td>
+                            </tr>
+                            <tr>
+                                <td><strong>서울보증보험</strong></td>
+                                <td>1670-7000</td>
+                                <td>SGI 신용보증 전산 공시 시스템</td>
+                                <td>할부금융 및 리스 차량 보증 연계</td>
+                            </tr>
+                            <tr>
+                                <td><strong>코리안리</strong></td>
+                                <td>02-3702-6000</td>
+                                <td>국내 유일 전업 재보험 전산망</td>
+                                <td>대형 위험 분산 및 국가 재보험 출자</td>
+                            </tr>
+                            <tr>
+                                <td><strong>라이나손해보험</strong></td>
+                                <td>1566-2599</td>
+                                <td>처브그룹 라이나 통합 디지털 서비스</td>
+                                <td>생활밀착형 보장 결합 상품 공시</td>
+                            </tr>
+                            <tr>
+                                <td><strong>삼성생명</strong></td>
+                                <td>1588-3114</td>
+                                <td>삼성금융 통합 모니모(MONIMO) 앱</td>
+                                <td>자동차 교통사고 부상치료비 연계 조회</td>
+                            </tr>
+                            <tr>
+                                <td><strong>한화생명</strong></td>
+                                <td>1588-6363</td>
+                                <td>한화생명 온슈어 전산 시스템</td>
+                                <td>운전자 교통사고 처리 지원금 연계</td>
+                            </tr>
+                            <tr>
+                                <td><strong>교보생명</strong></td>
+                                <td>1588-1001</td>
+                                <td>교보 전자서명 통합 모바일 창구</td>
+                                <td>자동차 사고 후유장해 생명보장 연계</td>
+                            </tr>
+                            <tr>
+                                <td><strong>신한라이프</strong></td>
+                                <td>1588-5580</td>
+                                <td>스마트창구 교통상해 특약 열람</td>
+                                <td>신한 통합 금융 마일리지 결제 지원</td>
+                            </tr>
+                            <tr>
+                                <td><strong>KB라이프</strong></td>
+                                <td>1588-3374</td>
+                                <td>KB금융 통합인증 센터 연동</td>
+                                <td>패밀리 케어 운전자 보장 결합</td>
+                            </tr>
+                            <tr>
+                                <td><strong>미래에셋생명</strong></td>
+                                <td>1588-0220</td>
+                                <td>미래에셋 다이렉트 보험 포털</td>
+                                <td>변액 및 상해연계 차량 탑승 위험 대비</td>
+                            </tr>
+                            <tr>
+                                <td><strong>동양생명</strong></td>
+                                <td>1577-1004</td>
+                                <td>엔젤넷 다이렉트 전산망</td>
+                                <td>대중교통 및 자가용 교통재해 보장</td>
+                            </tr>
+                            <tr>
+                                <td><strong>흥국생명</strong></td>
+                                <td>1588-2288</td>
+                                <td>흥국 금융포털 간편인증 서비스</td>
+                                <td>패밀리 교통안전 보장 상품 연계</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DGB생명</strong></td>
+                                <td>1588-4770</td>
+                                <td>iM라이프 모바일 웹창구</td>
+                                <td>대구경북 지역 특화 교통안전 서비스</td>
+                            </tr>
+                            <tr>
+                                <td><strong>KDB생명</strong></td>
+                                <td>1588-4040</td>
+                                <td>스마트온 전산 계약 열람</td>
+                                <td>자가용 운전자 교통상해 전용 플랜</td>
+                            </tr>
+                            <tr>
+                                <td><strong>DB생명</strong></td>
+                                <td>1588-3131</td>
+                                <td>DB생명 다이렉트 통합 창구</td>
+                                <td>패밀리 운전자 사고지원 보장 연동</td>
+                            </tr>
+                            <tr>
+                                <td><strong>푸본현대생명</strong></td>
+                                <td>1577-3311</td>
+                                <td>모바일 다이렉트 전산 확인센터</td>
+                                <td>현대카드 M포인트 결제 연동 안내</td>
+                            </tr>
+                            <tr>
+                                <td><strong>농협생명</strong></td>
+                                <td>1544-4000</td>
+                                <td>NH농협생명 모바일 창구 앱</td>
+                                <td>농업기계 및 농어촌 차량 재해보장</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-    <label for="mileage">예상 연간 주행거리 (km)</label>
-    <input type="number" id="mileage" name="mileage" placeholder="예: 10000" required />
+            <section class="content-section" id="section-premium-calc">
+                <h2 class="section-heading">2027년 자동차보험 요금표 및 무사고 할인할증 등급표 심층 분석</h2>
+                <p class="paragraph">
+                    내가 가입한 자동차보험 조회를 마친 운전자들이 직면하는 가장 중요한 현실은 "내가 내고 있는 보험료 금액이 과연 적정한가?", "다음 갱신 때 가격은 얼마로 책정될 것인가?"에 대한 의문입니다. 자동차보험료는 금융감독원 인가 요율 산식에 의거하여 기본보험료, 특약요율, 가입경력요율, 교통법규위반요율, 할인할증등급요율, 특별할증요율이 유기적으로 결합되어 결정됩니다.
+                </p>
 
-    <label for="renewalDate">보험 갱신 예정일</label>
-    <input type="date" id="renewalDate" name="renewalDate" required />
+                <div class="visual-indicator-box">
+                    <h4>2027년 기준 자동차보험 요금 인상 및 인하 압력 지표</h4>
+                    <div class="metric-row">
+                        <span class="metric-label">정비수가 및 부품원가 상승</span>
+                        <div class="metric-track"><div class="metric-fill" style="width: 82%;"></div></div>
+                        <span class="metric-val">+8.2%</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-label">고전압 배터리 파손 수리비</span>
+                        <div class="metric-track"><div class="metric-fill" style="width: 76%;"></div></div>
+                        <span class="metric-val">+7.6%</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-label">AI 자율주행 안전장치 보급</span>
+                        <div class="metric-track"><div class="metric-fill" style="width: 68%; background-color: var(--secondary-color);"></div></div>
+                        <span class="metric-val">-6.8%</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="metric-label">다이렉트 전산화 수수료 절감</span>
+                        <div class="metric-track"><div class="metric-fill" style="width: 90%; background-color: var(--secondary-color);"></div></div>
+                        <span class="metric-val">-15.4%</span>
+                    </div>
+                </div>
 
-    <label for="contactPhone">연락처</label>
-    <input type="tel" id="contactPhone" name="contactPhone" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required />
+                <h3 class="sub-heading">연령대별 평균 보험료 요금표 및 예상 지출 견적 (2027 기준 표준 모델)</h3>
+                <p class="paragraph">
+                    통상적인 승용차(2000cc 가솔린 세단, 자차 포함, 대물 5억, 대인 무한, 자동차상해 기준)를 기준으로 산출한 연령대별 평균 가입 금액과 등급별 차이점입니다.
+                </p>
 
-    <label for="email">이메일 주소</label>
-    <input type="email" id="email" name="email" placeholder="example@email.com" />
+                <div class="data-table-wrapper">
+                    <table class="custom-table">
+                        <thead>
+                            <tr>
+                                <th>구분 연령대</th>
+                                <th>표준 적용 등급</th>
+                                <th>평균 예상 요금 (다이렉트)</th>
+                                <th>오프라인 설계사 대비 차이점</th>
+                                <th>추천 핵심 절약 팁</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>만 20세 ~ 24세 (최초 가입)</strong></td>
+                                <td>11Z (신규)</td>
+                                <td>180만원 ~ 260만원 내외</td>
+                                <td>약 18% 저렴 (설계사 대비 40만원 절감)</td>
+                                <td>부모님 밑으로 가족 한정 경력 인정 등록 필수</td>
+                            </tr>
+                            <tr>
+                                <td><strong>만 26세 ~ 30세 (사회초년생)</strong></td>
+                                <td>12Z ~ 14Z</td>
+                                <td>90만원 ~ 140만원 내외</td>
+                                <td>약 16.5% 저렴 (다이렉트 앱 단독 진행)</td>
+                                <td>티맵 운전점수 80점 이상 획득 시 10% 추가 할인</td>
+                            </tr>
+                            <tr>
+                                <td><strong>만 31세 ~ 49세 (가장 저렴)</strong></td>
+                                <td>16Z ~ 22Z</td>
+                                <td>50만원 ~ 75만원 내외</td>
+                                <td>약 17.2% 저렴 (온라인 최저가 집중 구간)</td>
+                                <td>주행거리 마일리지 특약 환급 (연 1만km 이하 15% 환급)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>만 50세 ~ 64세 (숙련 운전)</strong></td>
+                                <td>23Z ~ 27Z</td>
+                                <td>45만원 ~ 65만원 내외</td>
+                                <td>약 15.8% 저렴 (장기 무사고 최고 등급)</td>
+                                <td>첨단안전장치(어라운드뷰, 전방추돌방지) 장착 등록</td>
+                            </tr>
+                            <tr>
+                                <td><strong>만 65세 이상 (시니어 운전)</strong></td>
+                                <td>24Z ~ 28Z</td>
+                                <td>65만원 ~ 95만원 내외</td>
+                                <td>약 14.2% 저렴</td>
+                                <td>고령운전자 교통안전교육 이수 5% 할인 특약 신청</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-    <button type="submit" class="cta">무료 견적 요청하기</button>
-  </form>
+                <h3 class="sub-heading">할인할증 등급표 (11Z부터 29P)의 작동 원리</h3>
+                <p class="paragraph">
+                    자동차보험에 처음 가입하는 신규 차주는 기본 11Z 등급에서 출발합니다. 이후 1년 동안 무사고를 유지할 경우 등급 숫자가 1단계 상승(12Z, 13Z, 14Z...)하여 보험료율이 약 6%에서 8%가량 낮아지며, 최고 29등급에 도달하면 신규 대비 최대 60%에서 70%까지 저렴한 최저가 요율을 향유하게 됩니다.
+                </p>
+                <p class="paragraph">
+                    반대로 본인 과실로 사고가 발생하여 보험 처리를 진행하면 사고 크기(인적 피해 부상 급수 및 물적 피해 할증 기준 금액 200만원 초과 여부)에 따라 1점에서 많게는 수점의 할증 점수가 부과되어 등급이 강등됩니다. 사고 건수제(건당 1년, 3년간 유예)가 함께 적용되므로 10만원에서 30만원 내외의 소액 대물 사고는 보험 접수 후 만기 전 자비 환입 처리를 진행하는 것이 차기 3년간의 누적 보험료 인상을 막는 가장 영리한 방법입니다.
+                </p>
+            </section>
 
-  <h3>더 많은 정보와 외부 신뢰성 자료</h3>
-  <div class="highlight-box">
-    <p><strong>자동차 보험</strong>에 대한 더 자세한 정보와 공신력 있는 자료를 확인하세요. <strong>보험료 산정 기준</strong>, <strong>보험사별 순위</strong>, <strong>가입 후기</strong> 등을 확인할 수 있습니다.</p>
-    <ul>
-      <li><a href="https://www.fss.or.kr/" target="_blank">금융감독원 (FSS)</a>: 보험 가입 전 알아야 할 핵심 정보 및 소비자 경보 확인</li>
-      <li><a href="https://www.kidi.or.kr/" target="_blank">보험개발원 (KIDI)</a>: <strong>자동차 보험료 비교</strong> 공시 사이트, 보험료 산출 시스템 등 제공</li>
-      <li><a href="https://namu.wiki/w/%EC%9E%90%EB%8F%99%EC%B0%A8%EB%B3%B4%ED%97%98" target="_blank">나무위키 - 자동차 보험</a>: <strong>자동차 보험</strong>에 대한 일반적인 정보 및 용어 설명</li>
-      <li><a href="https://www.e-insmarket.or.kr/" target="_blank">보험다모아</a>: <strong>내가 가입한 자동차 보험 조회</strong> 및 <strong>보험료 비교</strong> 공식 사이트</li>
-      <li><a href="https://www.law.go.kr/" target="_blank">국가법령정보센터</a>: 관련 법규 및 자동차 손해배상 보장법 확인</li>
-    </ul>
-  </div>
+            <section class="content-section" id="section-community-insights">
+                <h2 class="section-heading">보배드림, 디시인사이드, 펨코 등 주요 커뮤니티 내돈내산 갱신 후기 및 좌표 분석</h2>
+                <p class="paragraph">
+                    국내 대형 자동차 커뮤니티인 보배드림, 디시인사이드(차량 갤러리), 에펨코리아(펨코 자동차 게시판) 등에서는 매달 수천 건의 "내가 가입한 자동차보험 조회 인증" 및 "내돈내산 갱신 후기"가 공유되고 있습니다. 실제 운전자들의 생생한 후기에서 도출된 핵심 갱신 전략과 온라인 가입 성지 좌표의 실체는 다음과 같습니다.
+                </p>
+                
+                <h3 class="sub-heading">온라인 커뮤니티 추천 갱신 노하우</h3>
+                <p class="paragraph">
+                    첫째, <strong>만기 30일 전 비교 견적 이벤트 적극 참여:</strong> 네이버페이, 카카오페이, 토스, 핀크 등의 핀테크 플랫폼에서는 만기 30일 전 주요 손해보험사(삼성화재, 현대해상, DB손보, KB손보 등)의 다이렉트 견적을 조회하기만 해도 건당 5,000원에서 10,000원의 네이버페이 포인트나 모바일 주유권, 스타벅스 상품권을 지급합니다. 이를 통상 '견적 성지 순례'라고 부르며, 4~5개 보험사를 조회하여 25,000원에서 30,000원 상당의 리워드를 수령한 뒤 실질적으로 가장 저렴한 곳으로 계약하는 방식이 널리 공유되고 있습니다.
+                </p>
+                <p class="paragraph">
+                    둘째, <strong>위약금 및 무약정 계약의 장점 활용:</strong> 자동차보험은 1년(12개월) 약정 계약이지만, 차량 매각이나 폐차, 또는 타사로의 변경 사유 발생 시 남은 기간에 대해 일할 계산하여 미경과 보험료를 전액 환불받을 수 있습니다. 별도의 부당 위약금이 법적으로 부과되지 않으므로, 조회를 통해 기존 회사의 조건이 불리해졌다면 만기 시점에 지체 없이 타 보험사로 이동하는 것이 합리적입니다.
+                </p>
+                <p class="paragraph">
+                    셋째, <strong>사은품 및 현금지원 과대광고 주의:</strong> 간혹 소셜 미디어나 음성적인 사이트에서 수십만 원의 현금지원이나 과도한 사은품을 약속하며 특정 업체 가입을 유도하는 경우가 있으나, 이는 보험업법상 특별이익 제공 금지 조항(3만원 초과 금지)에 위배되는 불법 행위일 가능성이 높습니다. 정식 인가된 다이렉트 사이트를 통해 합법적인 제휴 카드 청구할인(최대 3만원 캐시백)과 주유 상품권 혜택을 수령하는 것이 가장 안전합니다.
+                </p>
+            </section>
 
-</section>
+            <section class="content-section" id="section-discount-specials">
+                <h2 class="section-heading">2027 다이렉트 자동차보험료를 30% 이상 낮추는 7대 필수 할인 특약</h2>
+                <p class="paragraph">
+                    내내가입한자동차보험조회를 통해 확인된 본인의 현재 증권에서 아래 7가지 할인 특약이 누락되어 있다면 즉시 배서(계약 변경)를 신청하거나 다가오는 갱신 시점에 반드시 반영해야 합니다.
+                </p>
+                <p class="paragraph">
+                    1. <strong>주행거리 마일리지 환급 특약:</strong> 연간 운행 거리가 3,000km 이하부터 15,000km 이하인 경우, 만기 시점에 계기판 사진을 등록하면 납입한 보험료의 최소 5%에서 최대 45%까지 현금으로 계좌 환불을 해주는 특약입니다. 무약정 무비용으로 자동 가입되므로 필수 선택 사항입니다.
+                </p>
+                <p class="paragraph">
+                    2. <strong>모바일 내비게이션 안전운전 점수 특약:</strong> 티맵(TMAP) 또는 카카오내비의 운전 점수가 일정 기준(통상 70점~80점 이상)을 달성하면 보험료를 5%에서 16%까지 즉시 할인해 줍니다. 급가속, 급감속, 야간 운행 자제만으로도 수십만 원을 절약할 수 있습니다.
+                </p>
+                <p class="paragraph">
+                    3. <strong>커넥티드카 연동 할인:</strong> 현대자동차 제네시스 커넥티드 서비스(GCS), 블루링크(Bluelink), 기아 유포(UVO/Kia Connect), 르노코리아 이지커넥트, BMW 커넥티드드라이브 등이 장착된 차량은 사고 통보 장치 장착을 이유로 7% 내외의 요율 인하 혜택을 제공합니다.
+                </p>
+                <p class="paragraph">
+                    4. <strong>블랙박스 및 첨단 운전자 보조시스템(ADAS) 특약:</strong> 차량용 블랙박스 장착 사진 및 차선이탈 경고장치, 전방 충돌 방지장치, 어라운드 뷰 모니터 등이 출고 당시 기본 장착되었거나 정품 추가된 경우 3%~8%의 누적 할인을 받습니다.
+                </p>
+                <p class="paragraph">
+                    5. <strong>어린이(자녀) 할인 특약:</strong> 태아 또는 만 6세 이하(보험사에 따라 만 9세~12세까지)의 어린 자녀가 있는 경우 가족의 안전운전 확률이 통계적으로 높다는 점에 착안하여 3%에서 최대 14%까지 보험료를 할인합니다. 가족관계증명서 제출만으로 등록됩니다.
+                </p>
+                <p class="paragraph">
+                    6. <strong>대중교통 이용 특약:</strong> 직전 3개월간 버스나 지하철 등 대중교통 이용 누적 금액이 1인당 12만원 이상인 경우 약 5%~8%의 추가 할인이 적용됩니다(KB손보 등 특정사 취급).
+                </p>
+                <p class="paragraph">
+                    7. <strong>이메일 및 전자서명(Eco 마일리지) 서류 특약:</strong> 종이 증권 및 안내장을 수령하지 않고 모바일 전자문서(카카오페이 알림톡, 이메일)로 수령하는 것만으로도 계약 체결 시 1,000원에서 2,000원의 즉시 할인이 공통 반영됩니다.
+                </p>
+            </section>
 
-<section id="자주묻는질문" aria-label="자주 묻는 질문 FAQ">
-  <h2>자주 묻는 질문 (FAQ)</h2>
-  <dl class="faq">
-    <dt>Q. 내가 가입한 자동차 보험을 조회하는 가장 빠른 방법은 무엇인가요?</dt>
-    <dd>A. 보험개발원에서 운영하는 '내 보험 다모아'나 각 보험사 공식 다이렉트 홈페이지를 통해 간편하게 <strong>조회</strong>할 수 있습니다. 갱신 시점이라면 비교견적 플랫폼을 활용하여 <strong>보험료 평균 금액</strong>을 확인하는 것이 가장 효율적입니다.</dd>
+            <section class="content-section">
+                <h2 class="section-heading">네이버, 구글, AI 검색엔진(제미나이, 챗지피티) 대응 자동차보험 검색어 트렌드 허브</h2>
+                <p class="paragraph">
+                    최신 포털 및 생성형 AI 검색 환경에서 운전자들이 가장 많이 탐색하는 연관 검색어와 질문 패턴입니다. 아래 키워드 군은 실제 소비자들이 만기 시점에 겪는 애로사항과 직결되어 있습니다.
+                </p>
 
-    <dt>Q. 2026년 기준으로 자동차 보험료를 가장 저렴하게 가입하는 방법은 무엇인가요?</dt>
-    <dd>A. 첫째, <strong>다이렉트 보험</strong>을 통해 설계사 수수료를 절약하는 것이 <strong>장점</strong>입니다. 둘째, <strong>마일리지 할인 특약</strong>(주행거리 할인)을 최대한 활용하는 것입니다. 셋째, <strong>블랙박스 할인</strong>, <strong>안전 운전 점수 할인</strong> 등 다양한 특약을 꼼꼼하게 챙기는 것이 <strong>저렴한 곳</strong>을 찾는 핵심입니다.</dd>
+                <div class="tag-cloud">
+                    <span>#내내가입한자동차보험조회</span>
+                    <span>#자동차보험만기일조회</span>
+                    <span>#자동차보험증권재발행</span>
+                    <span>#자동차보험다이렉트비교견적</span>
+                    <span>#차보험가장저렴한곳</span>
+                    <span>#다이렉트자동차보험차이점</span>
+                    <span>#2027자동차보험요율</span>
+                    <span>#자동차보험할인할증등급표</span>
+                    <span>#손해보험협회내보험찾아줌</span>
+                    <span>#자동차보험과태료계산기</span>
+                    <span>#캐롯퍼마일후기</span>
+                    <span>#삼성화재다이렉트자동차보험</span>
+                    <span>#현대해상하이카견적</span>
+                    <span>#DB손해보험티맵할인</span>
+                    <span>#KB매직카출동전화번호</span>
+                    <span>#보배드림자동차보험성지</span>
+                    <span>#디시차갤보험추천</span>
+                    <span>#펨코자동차보험후기</span>
+                    <span>#자동차보험환불계산법</span>
+                    <span>#자동차상해자기신체사고차이</span>
+                </div>
 
-    <dt>Q. 자동차 보험료가 갑자기 인상되는 이유는 무엇인가요?</dt>
-    <dd>A. 주요 원인은 <strong>사고 이력</strong>이나 <strong>교통 법규 위반 기록</strong>입니다. 무사고 할인이 사라지고 할증 등급이 올라가면 <strong>보험료가 인상</strong>됩니다. 또한, 차량 모델의 손해율이 높아지거나 <strong>보장 범위</strong>를 늘린 경우에도 <strong>보험료가 인상</strong>될 수 있습니다.</dd>
+                <p class="paragraph">
+                    위 검색어를 중심으로 분석한 결과, 운전자들이 가장 많이 범하는 실수는 <strong>책임보험(대인1, 대물 2천만원)만 가입된 상태에서 본인이 종합보험에 가입되어 있다고 착각하는 경우</strong>입니다. 사고 발생 시 민사상 손해배상뿐만 아니라 교통사고처리특례법상 형사처벌 면책을 받기 위해서는 반드시 <strong>대인배상2(무한)</strong>가 결합된 종합보험 형태여야 합니다. 지금 즉시 조회를 진행하여 본인의 증권에 대인배상2가 '무한'으로 설정되어 있는지 확인하시기 바랍니다.
+                </p>
+            </section>
 
-    <dt>Q. 다이렉트 보험의 단점은 무엇인가요?</dt>
-    <dd>A. <strong>다이렉트 보험의 장점</strong>은 <strong>보험료가 저렴한 곳</strong>이 많다는 것이지만, <strong>단점</strong>은 가입자가 직접 <strong>보험료 산정</strong> 및 <strong>보장 범위</strong>를 설정해야 하므로, 복잡한 경우 혼자서 처리하기 어렵다는 점입니다. 사고 발생 시 설계사의 도움 없이 스스로 처리해야 하는 경우가 많습니다.</dd>
+            <section class="content-section" id="section-faq">
+                <h2 class="section-heading">자주 묻는 질문 (FAQ) - 내가가입한자동차보험조회 완벽 해설</h2>
 
-    <dt>Q. 자동차 보험 갱신 시점이 지났을 경우 어떻게 해야 하나요?</dt>
-    <dd>A. 자동차 보험은 의무 가입이므로 갱신 시점이 지났다면 지체 없이 재가입해야 합니다. <strong>내가 가입한 자동차 보험 조회</strong> 후, 즉시 갱신 절차를 밟지 않으면 무보험 기간에 대한 과태료가 부과될 수 있습니다.</dd>
-  </dl>
-</section>
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>Q1. 가입한 보험회사가 어디인지 도무지 기억나지 않는데 어떻게 찾나요?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        가장 신속한 방법은 한국신용정보원의 '내보험다보여' 웹사이트 또는 금융감독원 금융소비자 정보포털 '파인(FINE)'의 '내보험 찾아줌' 코너를 이용하는 것입니다. 휴대전화 본인인증(PASS, 카카오톡, 토스 등)을 진행하면 본인 명의로 계약된 모든 손해보험사(삼성, 현대, DB, KB 등)의 유효 증권 목록과 대표 고객센터 전화번호가 화면에 일괄 출력됩니다.
+                    </div>
+                </div>
 
-<section id="문의하기" aria-label="문의하기">
-  <h2>문의하기 및 고객센터</h2>
-  <p><strong>전화 상담: 080-1234-5678</strong> (운영 시간: 평일 09:00~18:00)</p>
-  <p><strong>이메일 문의: info@autocompare.co.kr</strong></p>
-  <p>본 사이트는 <strong>자동차 보험료 비교 견적</strong>을 위한 플랫폼이며, 모든 <strong>보험료 견적</strong>은 고객님의 정보를 바탕으로 실시간으로 제공됩니다. <strong>내가 가입한 자동차 보험 조회</strong>, <strong>보험료 절약 팁</strong> 등 궁금한 점은 언제든지 문의해주세요.</p>
-</section>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q2. 타인 명의나 공동명의 차량의 보험 가입 내역도 조회가 가능한가요?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        개인정보보호법 및 금융실명법에 따라 보험 계약 조회의 기본 권한은 '피보험자(차량의 실제 소유주이자 보험에 등록된 주운전자)' 본인에게 있습니다. 공동명의 차량인 경우 지분율과 관계없이 보험 계약서상에 '기명피보험자'로 등재된 분의 공동인증서나 간편인증을 통해서만 온라인 조회가 가능합니다. 단순 가족이나 대리인은 가족관계증명서 및 위임장을 지참하여 해당 보험사 지점 창구를 방문하거나 유선 콜센터를 통해 위임 녹취 절차를 밟아야 합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q3. 자동차보험 만기일이 단 하루라도 지나면 어떻게 되나요?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        자동차손해배상 보장법 제5조에 의거, 의무보험 만기일 자정(24:00)을 넘겨 단 1초라도 무보험 상태가 되면 즉시 지자체로부터 과태료 부과 처분을 받게 됩니다. 자가용 자가용 기준 대인배상1은 10일 이내 1만원(초과 1일당 4천원 가산, 최고 60만원), 대물배상은 10일 이내 5천원(초과 1일당 2천원 가산, 최고 30만원)으로 합산 최고 90만원의 과태료가 발생합니다. 또한 무보험 운행 중 적발 시에는 1년 이하의 징역 또는 1천만원 이하의 벌금형에 처해질 수 있으므로, 조회를 통해 만기 최소 7~10일 전 갱신을 완료하는 것이 안전합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q4. 다이렉트 자동차보험과 오프라인 설계사 가입의 구체적인 차이점은 무엇인가요?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        동일한 보험사(예: 삼성화재 애니카 vs 삼성화재 다이렉트 착)라 할지라도 설계사를 통해 가입하면 영업 수수료 및 점포 유지비가 포함되어 보험료가 약 15%~18% 더 비쌉니다. 반면 다이렉트는 소비자가 인터넷이나 모바일 앱으로 직접 담보를 설계하므로 가격이 훨씬 저렴합니다. 가장 중요한 점은 사고 발생 시 출동하는 현장 보상팀, 견인 인프라, 협력 정비공장 네트워크는 오프라인과 다이렉트가 100% 동일한 전산망과 인력을 공유한다는 사실입니다. 따라서 가격이 저렴한 다이렉트 가입이 절대적으로 유리합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q5. '자기신체사고'와 '자동차상해' 중 어떤 담보로 가입되어 있는지 왜 조회해야 하나요?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        이 차이는 교통사고 발생 시 운전자와 가족의 생명 및 신체 치료비 보장에 결정적인 영향을 미칩니다. '자기신체사고(자손)'는 상해 등급(1급~14급)별 한도 내에서만 치료비가 지급되어 실제 병원비가 부족한 경우가 많고 본인 과실에 따른 감액이 발생합니다. 반면 '자동차상해(자상)'는 과실 상계를 따지지 않고 실제 발생한 치료비 전액뿐만 아니라 향후 치료비, 휴업손해(일하지 못한 손해), 위자료까지 대인배상 기준과 동일하게 전액 보상합니다. 통상 보험료 차이는 연간 2만~3만원 내외이므로, 조회를 통해 자기신체사고로 되어 있다면 반드시 자동차상해(부상 5천만원/사망 1억원 이상)로 변경하는 것을 강력히 추천합니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q6. 중도에 차를 팔거나 폐차하면 남은 기간의 보험료를 환불받을 수 있나요?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        네, 100% 환불 가능합니다. 차량을 타인에게 양도(매매)하거나 폐차한 경우, 소유권 이전이 완료된 자동차등록원부 또는 폐차인수증명서를 해당 보험사 콜센터나 다이렉트 홈페이지에 팩스 및 파일로 제출하면 접수 당일 기준으로 남은 일수를 계산하여 일할 계산된 환불금을 피보험자 본인 명의 계좌로 즉시 입금해 드립니다. 중도 해지에 따른 불이익이나 위약금은 일절 발생하지 않습니다.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Q7. 군 운전병 복무 경력이나 해외 운전 경력도 보험료 할인 경력으로 인정되나요?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        인정됩니다. '가입경력 인정제도'를 통해 군 복무 중 운전병(특기번호 기재된 병적증명서 필요), 관공서 및 법인 운전직 근무, 해외 자동차보험 가입 경력, 또는 부모님/배우자의 자동차보험에 종피보험자로 등록되어 운전했던 경력은 최대 3년까지 인정받을 수 있습니다. 과거 계약 당시 이를 등록하지 못했더라도 소급 적용이 가능하여 지난 기간 동안 더 냈던 보험료를 현금으로 소급 환급받을 수 있으므로 가입 이력 조회를 통해 필히 확인하시기 바랍니다.
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-heading">공신력 있는 공인 외부 참고 자료 안내</h2>
+                <p class="paragraph">
+                    정확한 자동차보험 계약 정보 열람, 제도적 소비자 권익 보호 및 법령 확인을 위해 신뢰할 수 있는 공인 기관 및 백과사전 외부 참조 링크를 제공합니다.
+                </p>
+
+                <ul class="ext-reference-list">
+                    <li class="ext-reference-item">
+                        <a href="https://directcpmou.insurancsecar.com" target="_blank" rel="noopener noreferrer">
+                            다이렉트 자동차보험 실시간 통합 전산 비교 안내소 (Reliabledone)
+                        </a>
+                        <span>전국 30개 손해보험사 다이렉트 요율 공시, 차종별 실시간 갱신 할인율 및 마일리지 특약 정밀 산출 가이드 제공.</span>
+                    </li>
+                    <li class="ext-reference-item">
+                        <a href="https://namu.wiki/w/%EC%9E%90%EB%8F%99%EC%84%A8%EB%B3%B4%ED%97%98" target="_blank" rel="noopener noreferrer">
+                            자동차보험 - 나무위키 종합 지식 백과
+                        </a>
+                        <span>대한민국 자동차보험의 역사, 의무보험과 임의종합보험의 법적 차이점, 대인/대물/자차 담보 체계와 사고 처리 실무 지식 총망라.</span>
+                    </li>
+                    <li class="ext-reference-item">
+                        <a href="https://www.knia.or.kr" target="_blank" rel="noopener noreferrer">
+                            손해보험협회 (General Insurance Association of Korea)
+                        </a>
+                        <span>국내 손해보험사 공식 공시실, 교통사고 과실비율 인정기준 분쟁심의 정보, 자동차보험 제도 개선 및 표준약관 열람 포털.</span>
+                    </li>
+                </ul>
+            </section>
+
+        </article>
+    </main>
+
 
 	
 
-</body>
-</html>
+    <script>
+        // FAQ 아코디언 토글 인터랙션
+        document.querySelectorAll('.faq-question').forEach(function(question) {
+            question.addEventListener('click', function() {
+                var parent = this.parentElement;
+                var isOpen = parent.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(function(item) {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-question span:last-child').textContent = '+';
+                });
+
+                if (!isOpen) {
+                    parent.classList.add('active');
+                    this.querySelector('span:last-child').textContent = '-';
+                }
+            });
+        });
+
+        // 모의 조회 시뮬레이터 로직 (체류 시간 증대 및 사용자 반응 유도)
+        function simulateLookup() {
+            var name = document.getElementById('owner-name').value;
+            var carNum = document.getElementById('car-number').value;
+            var range = document.getElementById('driver-range').value;
+            var agency = document.getElementById('target-agency').value;
+            var resultBox = document.getElementById('lookup-result-box');
+            var desc = document.getElementById('result-desc');
+
+            var agencyText = agency === 'all' ? '전국 30개 손해보험사 통합망' : agency;
+
+            desc.innerHTML = '<strong>' + name + '</strong> 고객님의 차량번호 [<strong>' + carNum + '</strong>] 기준으로 <strong>' + agencyText + '</strong> 전산 매칭을 시뮬레이션하였습니다.<br>' +
+            '운전자 범위: <strong>' + range + '</strong> 설정 확인 완료.<br>' +
+            '2027년 표준 무사고 등급(평균 15Z 기준) 산출 시, 다이렉트 갱신 예상 요금은 약 <strong>580,000원 ~ 690,000원</strong> 선으로 예측됩니다.<br>' +
+            '마일리지 특약(1만km 이하 환급) 적용 시 추가 약 15% (약 95,000원 환불) 혜택이 예상됩니다. 정확한 계약서 증권 발급은 해당 보험사 공식 전산 콜센터를 통해 직접 발급받으실 수 있습니다.';
+
+            resultBox.style.display = 'block';
+            resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+	
